@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'lootsafe-icon';
+  src:  url('lootsafe-icon.eot?uscatk');
+  src:  url('lootsafe-icon.eot?uscatk#iefix') format('embedded-opentype'),
+    url('lootsafe-icon.ttf?uscatk') format('truetype'),
+    url('lootsafe-icon.woff?uscatk') format('woff'),
+    url('lootsafe-icon.svg?uscatk#lootsafe-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.lootsafe-icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'lootsafe-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lootsafe-linkedin:before {
+  content: "\e905";
+}
+.lootsafe-google_plus:before {
+  content: "\e906";
+}
+.lootsafe-youtube:before {
+  content: "\e907";
+}
+.lootsafe-instagram:before {
+  content: "\e908";
+}
+.lootsafe-twitter:before {
+  content: "\e909";
+}
+.lootsafe-facebook:before {
+  content: "\e90a";
+}
+.lootsafe-triangle-outline:before {
+  content: "\e904";
+}
+.lootsafe-right-arrow:before {
+  content: "\e902";
+}
+.lootsafe-plus:before {
+  content: "\e900";
+}
+.lootsafe-diamond:before {
+  content: "\e901";
+}
+.lootsafe-triangle-filled:before {
+  content: "\e903";
+}
