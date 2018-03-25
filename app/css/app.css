@@ -678,7 +678,7 @@ input.smallButton:hover {
   box-sizing: border-box;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  padding: 640px 0px;
+  padding: 780px 0px;
   /*padding: 70vh 0px;*/
   -ms-transform: skew(-10deg, 2deg);
   -webkit-transform: skew(-10deg, 2deg);
@@ -1224,9 +1224,6 @@ input.smallButton:hover {
   #tools .bg {
     right: -770px !important;
   }
-  #tools {
-    margin-bottom: 10rem;    
-  }
 }
 
 @media (min-width: 2000px) {
@@ -1237,9 +1234,6 @@ input.smallButton:hover {
   #tools .bg {
     right: -500px;
   }
-  #tools {
-    margin-bottom: 10rem;    
-  }
 }
 
 
@@ -1247,9 +1241,6 @@ input.smallButton:hover {
   #footer .bg2 {
     width: 40%;
     right: -150px !important;
-  }
-  #tools {
-    margin-bottom: 10rem;    
   }
 }
 
