@@ -1375,3 +1375,27 @@ input.smallButton:hover {
     margin-top: 880px;
   }
 }
+
+@media only screen and (max-width: 992px) {
+/* move the whole navbar button down*/
+/*  .navbar-toggler {
+    padding-top: 88px;
+    margin-top: 88px;
+  }*/
+  /* reduce the navbar image size to accomodate the button next to it */
+  .navbar-brand img {
+    margin-top: -5px;
+    width: 150px;
+  }
+
+  #mobileSpacer {
+    padding-top: 90px;
+  }
+
+}
+
+.leftCenterJustifiedText {
+  text-align: justify;
+  -moz-text-align-last: left;
+  text-align-last: left;
+}
