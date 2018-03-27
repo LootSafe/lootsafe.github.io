@@ -1399,3 +1399,10 @@ input.smallButton:hover {
   -moz-text-align-last: left;
   text-align-last: left;
 }
+
+@media only screen and (max-width: 769px) {
+  /* make the go to top image dark because the background that made it visible in all other screen sizes dissapears*/
+  #goTopContainer {
+    display: none;
+  }
+}
