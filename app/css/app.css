@@ -1391,6 +1391,9 @@ input.smallButton:hover {
   #mobileSpacer {
     padding-top: 90px;
   }
+  .justify-content-end {
+    /*display: none;*/
+  }
 
 }
 
