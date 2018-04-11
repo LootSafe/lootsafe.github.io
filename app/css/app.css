@@ -537,7 +537,7 @@ input.smallButton:hover {
   background: inherit;
   bottom: 0;
   transform-origin: left bottom;
-  transform: skewY(-11deg);
+  transform: skewY(-9deg);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -1428,6 +1428,6 @@ input.smallButton:hover {
 
 }
 
-  #whyToChooseUs {
-    margin-bottom: 200px;
-  }
+#whyToChooseUs {
+  margin-bottom: 200px;
+}
