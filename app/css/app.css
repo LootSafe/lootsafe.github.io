@@ -133,7 +133,7 @@ p {
 }
 
 .formHighlightRight {
-  background: -moz-linear-gradient(-180deg, #26e1fd 0%, transparent 100%);
+  background: -moz-linear-gradient(-sm0deg, #26e1fd 0%, transparent 100%);
   background: -webkit-linear-gradient(-180deg, #26e1fd 0%, transparent 100%);
   background: linear-gradient(right to left, #26e1fd 0%, transparent 100%);
   margin-top: 8px;
@@ -430,7 +430,7 @@ input.smallButton:hover {
 .smallGrayBgRight {
   right: 0;
   width: 80%;
-  padding: 18vw 0px;
+  padding: 33vw 0px;
   top: 2vh;
   display: inline-flex;
   align-items: center;
@@ -449,7 +449,7 @@ input.smallButton:hover {
 .smallGrayBgLeft {
   left: 0;
   width: 80%;
-  padding: 18vw 0px;
+  padding: 33vw 0px;
   top: 95vh;
   left: -45vw;
   display: inline-flex;
