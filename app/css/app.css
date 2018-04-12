@@ -430,7 +430,7 @@ input.smallButton:hover {
 .smallGrayBgRight {
   right: 0;
   width: 80%;
-  padding: 33vw 0px;
+  padding: 33vw 0px !important;
   top: 2vh;
   display: inline-flex;
   align-items: center;
@@ -449,7 +449,7 @@ input.smallButton:hover {
 .smallGrayBgLeft {
   left: 0;
   width: 80%;
-  padding: 33vw 0px;
+  padding: 33vw 0px !important;
   top: 95vh;
   left: -45vw;
   display: inline-flex;
