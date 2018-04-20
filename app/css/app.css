@@ -849,7 +849,7 @@ input.smallButton:hover {
 }
 
 #footer .bg1 {
-  /*background-color: #f4f9fd;*/
+  background-color: #f4f9fd;
   width: 85%;
   position: relative;
   left: -80px;
@@ -1409,9 +1409,7 @@ input.smallButton:hover {
 
 @media only screen and (max-width: 769px) {
   /* make the go to top image dark because the background that made it visible in all other screen sizes dissapears*/
-  #goTopContainer {
-    display: none;
-  }
+  
 }
 
 /*ultrawide changes*/
