@@ -1380,6 +1380,16 @@ input.smallButton:hover {
   }
 }
 
+
+/*************** NEW ******************/
+
+.buttonWrapper {
+	display: flex;
+	justify-content: center;
+	padding: 0 0 30px;
+	width: 100%;
+}
+
 @media only screen and (max-width: 992px) {
 /* move the whole navbar button down*/
 /*  .navbar-toggler {
@@ -1409,7 +1419,7 @@ input.smallButton:hover {
 
 @media only screen and (max-width: 769px) {
   /* make the go to top image dark because the background that made it visible in all other screen sizes dissapears*/
-  
+
 }
 
 /*ultrawide changes*/
