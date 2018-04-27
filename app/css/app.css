@@ -261,6 +261,7 @@ p {
 }
 
 .lootsafe-triangle-outline {
+
   font-size: 40px;
   position: absolute;
   top: 80vh;
@@ -539,8 +540,9 @@ input.smallButton:hover {
 }
 
 #tools .bgElements {
+  left: 20%;
   position: absolute;
-  top: 50px;
+  top: 70px;
 }
 
 #tools .blueCircle {
@@ -770,7 +772,7 @@ input.smallButton:hover {
 /* Start of Stay Notified */
 
 #stayNotified {
-  margin: 50px 0;
+  margin: 150px 0 50px;
   position: relative !important;
   text-align: center;
   z-index: 999;
@@ -874,9 +876,9 @@ input.smallButton:hover {
   background: linear-gradient(135deg, #8c57d1 20%, #1090cb 43%, #1046d1 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   width: 50%;
-  top: 270px;
+  top: 60%;
   float: right;
-  right: -120px;
+  right: -12%;
   position: absolute;
   box-sizing: border-box !important;
   border-bottom-left-radius: 20px;
@@ -982,13 +984,13 @@ input.smallButton:hover {
 .goTop .outlineCircle { position: relative; top: -40%; left: 66%; color: #ffffff; transform: rotate(90deg); z-index: 1; }
 #footer .roundedRectanglesUnderForm {
 	display: none;
-	left: 10px;
-	top: -170px;
+	left: -154px;
+	top: -15px;
 }
 #footer .roundedRectangle { margin-top: -7px; margin-bottom: 0; margin-left: 0;}
 #footer .dotsPattern { top: 80%; left: 100%; }
 #footer .formHighlightWrapper { bottom: 0%; }
-#footer .lootsafe-triangle-outline { color: #ffffff; top: 60%; left: 50%; bottom: 0; right: 0;}
+#footer .lootsafe-triangle-outline { color: #000; top: 60%; left: 0; bottom: 0; right: 0;}
 #footer .blueCircle { top: -55%; left: 40%; }
 #footer .whiteCircleSmall { top: -30%; left: 110%; }
 /* End of Footer */
@@ -1143,9 +1145,9 @@ input.smallButton:hover {
   #footer .bg2 {
     width: 100%;
     margin-top: 900px;
-    bottom: 1550px;
+    /* bottom: 1550px; */
     float: right;
-    right: -100px;
+    /* right: -100px; */
     position: absolute;
     box-sizing: border-box !important;
     border-bottom-left-radius: 20px;
@@ -1164,7 +1166,7 @@ input.smallButton:hover {
   }
 
   #footer .formHighlightWrapper { position: relative; top: 200px; left: 50%; }
-  #footer .lootsafe-triangle-outline { color: #ffffff; top: 60%; left: 10%; bottom: 0; right: 0;}
+  #footer .lootsafe-triangle-outline { color: #000; top: 60%; left: 10%; bottom: 0; right: 0;}
 
   /* end of footer */
 
@@ -1192,10 +1194,6 @@ input.smallButton:hover {
 	width: 100%;
 }
 
-.container {
-	padding: 0 20px !important;
-}
-
 .heroBox {
 	display: block;
 	margin: 0 auto;
@@ -1204,7 +1202,7 @@ input.smallButton:hover {
 
 .heroBoxWrap {
 	display: block;
-	padding: 20vh 20px;
+	padding: 150px 20px;
 }
 
 .toolBoxWrapper {
@@ -1240,15 +1238,26 @@ input.smallButton:hover {
   display: block;
 }
 
+#goTopContainer {
+	cursor: pointer;
+	left: 20px;
+	top: 50px;
+}
+
+.container {
+	max-width: 80% !important;
+	width: 80% !important;
+}
+
 @media(min-width:700px) {
 	.toolsRow {
 		left: 50px;
 	}
 }
 
-@media(min-width: 780px) {
-	.goTop {
-		margin-right: -5rem;
+@media(min-width: 770px) {
+	#goTopContainer {
+			left: -100px;
 	}
 
 	.goTopCircle {
@@ -1257,8 +1266,6 @@ input.smallButton:hover {
 
 	.goTopText {
 		color: #fff;
-		float: right;
-		left: 95px;
 		width: 120px;
 	}
 
@@ -1269,6 +1276,26 @@ input.smallButton:hover {
 	#footer .roundedRectanglesUnderForm {
 	  display: block;
 	}
+
+	.row {
+		justify-content: space-between;
+	}
+
+	#team .row {
+		justify-content: flex-start;
+	}
+
+	.contentWrapper {
+		width: 100%;
+	}
+
+	.siteBlurb {
+		max-width: 600px;
+	}
+
+	#footer .lootsafe-triangle-outline  {
+		color: #fff;
+	}
 }
 
 @media(min-width: 800px) {
@@ -1278,14 +1305,17 @@ input.smallButton:hover {
 
 	#team .bg {
 		left: -100px;
-		padding: 830px 70px;
+		padding: 870px 70px;
 	}
 }
 
 @media (min-width: 1000px) {
+  #whyToChooseUs {
+   margin-top: 10%;
+  }
 
   #stayNotified {
-	  margin: 25% 0 150px;
+	  margin: 18% 0 150px;
   }
 
   .imageBox {
@@ -1324,6 +1354,10 @@ input.smallButton:hover {
     flex: 0 0 41.666667%;
  }
 
+ #tools {
+	 margin-top: 10%;
+ }
+
  #tools .toolsRow {
 	 display: flex;
 	 left: 125px;
@@ -1336,7 +1370,7 @@ input.smallButton:hover {
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
-    max-width: 50%%;
+    max-width: 50%;
 	justify-content: space-around;
  }
 
@@ -1348,37 +1382,44 @@ input.smallButton:hover {
     max-width: 40%;
  }
 
+
 }
 
 @media (min-width: 1300px) {
   #team .bg {
       padding: 775px 0;
    }
+
 }
 
+
+
 @media (min-width: 2000px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -50px;
-  }
   #tools .bg {
-    right: -500px;
+    right: -320px;
   }
 
   #team {
 	  margin-top: 450px;
   }
+
+  #team .bg {
+	  transform: skew(-24deg, 2deg);
+  }
+
 }
 
-@media (min-width: 2500px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -50px;
-  }
-  #tools .bg {
-    right: -770px !important;
-  }
+@media (min-width: 3000px) {
+	#footer .bg2 {
+	  right: -13%;
+	  top: 68%;
+	}
+
+	.smallGrayBgRight {
+	  width: 90%;
+	}
 }
+
 
 @media (max-width: 660px) {
   /* Start of hero */
