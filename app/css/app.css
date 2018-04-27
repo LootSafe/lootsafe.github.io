@@ -857,10 +857,8 @@ input.smallButton:hover {
   height: 100%;
   position: absolute;
   background: inherit;
-  top: 100px;
+  top: 83%;
   bottom: 0;
-  transform-origin: left bottom;
-  transform: skewY(10deg);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   z-index: -1;
@@ -1203,6 +1201,7 @@ input.smallButton:hover {
 .heroBoxWrap {
 	display: block;
 	padding: 150px 20px;
+	width: 100%;
 }
 
 .toolBoxWrapper {
@@ -1399,10 +1398,6 @@ input.smallButton:hover {
     right: -320px;
   }
 
-  #team {
-	  margin-top: 450px;
-  }
-
   #team .bg {
 	  transform: skew(-24deg, 2deg);
   }
@@ -1417,6 +1412,43 @@ input.smallButton:hover {
 
 	.smallGrayBgRight {
 	  width: 90%;
+	}
+
+	#stayNotified {
+		margin: 18% 0;
+	}
+}
+
+@media (min-width: 6000px) {
+	#tools {
+		margin-top: 17%;
+	}
+
+	#hero .bg {
+	  left: -65.5%;
+	  padding: 960px 0px;
+	}
+
+	#team {
+		margin-top: 10%;
+	}
+
+	#footer .bg2 {
+		top: 87%;
+	}
+
+	#tools .bg::after {
+	  height: 3000px;
+  	}
+
+	#goTopContainer {
+		left: -900px;
+		 top: 60px;
+	}
+
+	#footer .bg1::after {
+		height: 160%;
+		left: -28px;
 	}
 }
 
