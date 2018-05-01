@@ -78,6 +78,10 @@ p {
   position: relative;
 }
 
+#hero .hero-row {
+  padding: 100px 0 200px;
+}
+
 #hero .bg {
   background: #8c57d1;
   /* Old browsers */
@@ -90,7 +94,7 @@ p {
   width: 150%;
   height: 100%;
   position: absolute;
-  left: -60.5%;
+  left: -59%;
   top: -320px;
   box-sizing: border-box;
   border-bottom-right-radius: 20px;
@@ -242,7 +246,7 @@ p {
 }
 
 .bgElements span {
-  display: block !important;
+  display: block;
 }
 
 .lootsafe-triangle-filled {
@@ -259,7 +263,7 @@ p {
 .lootsafe-diamond {
   position: absolute;
   /*margin: 10vh 0 0 30vw !important;*/
-  top: 80vh;
+  top: 60vh;
   left: 38vw;
   color: #26e1fd;
 }
@@ -281,7 +285,7 @@ p {
 
 /* End of design elements from background */
 
-.contentWrapper { display: inline-flex !important; margin: 0; align-items: center; padding: 20vh 0px;}
+.contentWrapper { display: inline-flex !important; margin: 0; align-items: center; padding: 100px 0px;}
 .wrapper { padding: 20vh 0px; display: inline-flex !important; }
 
 .heroLeftContent,
@@ -373,6 +377,7 @@ p {
 
 .largeButton {
   position: relative;
+  display: inline-block;
   background-color: #26e1fd;
   border: 0px;
   border-radius: 50px;
@@ -383,7 +388,6 @@ p {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, .1);
-  top: 30px;
   cursor: pointer;
   z-index: 999;
 }
@@ -420,21 +424,27 @@ input.smallButton:hover {
 #whatWeDo {
   max-width: 100% !important;
   position: relative;
-  overflow: hidden;
+  margin-bottom: 260px;
 }
 
 #whatWeDo .contentWrapper {
   display: block;
 }
 
-.smallGrayBgRight {
-  right: 0;
-  width: 80%;
-  padding: 33vw 0px !important;
-  top: 2vh;
+#whatWeDo .bgContainer {
+  position: relative;
+  width: 100%;
+}
+
+#whatWeDo .smallGrayBgRight {
+  top: 0;
+  width: 6000px;
+  height: 710px;
+  top: -480px;
   display: inline-flex;
   align-items: center;
-  right: -45vw;
+  left: 100%;
+  margin-left: -280px;
   background-color: #f4f9fd;
   position: absolute !important;
   box-sizing: border-box !important;
@@ -447,13 +457,13 @@ input.smallButton:hover {
 }
 
 .smallGrayBgLeft {
-  left: 0;
-  width: 80%;
-  padding: 33vw 0px !important;
-  top: 95vh;
-  left: -45vw;
+  width: 6000px;
+  height: 710px;
+  top: -480px;
   display: inline-flex;
   align-items: center;
+  right: 100%;
+  margin-right: -360px;
   background-color: #f4f9fd;
   position: absolute !important;
   box-sizing: border-box !important;
@@ -480,7 +490,7 @@ input.smallButton:hover {
   background-color: #f4f9fd;
   /*box-shadow: 0px 0px 30px rgba(0, 0, 0, .02);*/
   box-sizing: border-box !important;
-  padding: 40px 20px;
+  padding: 40px 30px !important;
   border-left: 10px solid #fff;
 }
 .box:first-child { border-left: none; }
@@ -493,12 +503,18 @@ input.smallButton:hover {
 /* Start of Tools */
 
 #tools .bgContainer {
-  position: relative !important;
+  position: relative;
 }
 
 #tools {
-  padding: 0px 0px 200px 0px;
+  position: relative;
+  padding: 200px 0px 200px 0px;
   box-sizing: border-box !important;
+}
+
+#tools .bgContainer {
+  transform: perspective(1000px);
+  perspective: 1000px;
 }
 
 #tools .bg {
@@ -510,47 +526,14 @@ input.smallButton:hover {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #8c57d1 20%, #1090cb 43%, #1046d1 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  width: 100%;
-  top: 350px;
-  float: right;
-  right: -100px;
+  width: 110vw;
+  top: 42px;
+  height: 660px;
+  left: 50%;
+  margin-left: -560px;
   position: absolute;
-  box-sizing: border-box;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  padding: 200px 0px;
-  /*padding: 70vh 0px;*/
-  -ms-transform: skew(10deg, -2deg);
-  -webkit-transform: skew(10deg, -2deg);
-  transform: skew(10deg, -2deg);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-#tools .bg::after {
-  content: '';
-  width: 110%;
-  /*height: 100%;*/
-  top: 0;
-  height: 1500px;
-  position: absolute;
-  background: inherit;
-  bottom: 0;
-  transform-origin: left bottom;
-  transform: skewY(-9deg);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-#tools .bg::before {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: inherit;
-  top: 0;
-  transform-origin: left top;
-  transform: skewY(10deg);
+  transform: rotateY(-12.5deg) rotateZ(-6.3deg);
+  transform-origin: center left;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -574,8 +557,8 @@ input.smallButton:hover {
 
 #tools .outlineCircle {
   position: absolute;
-  top: 610px;
-  left: 20.5vh;
+  top: 510px;
+  right: 20.5vh;
 }
 
 #tools .leftContent {
@@ -586,7 +569,6 @@ input.smallButton:hover {
 
 #tools .toolsRow {
   position: relative;
-  top: 230px !important;
 }
 
 .toolBoxWrapper {
@@ -662,60 +644,55 @@ input.smallButton:hover {
 /* Start of Team */
 
 #team {
-  padding: 200px 0px 0px 0px;
+  margin-top: 70px;
+  padding-top: 60px;
   box-sizing: border-box !important;
-  margin-bottom: 400px;
+  margin-bottom: 360px;
+  position: relative;
 }
 
 #team .bgContainer {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 #team .bg {
   background: #f4f9fd;
   width: 100%;
-  left: -100px;
   top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   position: absolute;
   box-sizing: border-box;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  padding: 780px 0px;
-  /*padding: 70vh 0px;*/
-  -ms-transform: skew(-10deg, 2deg);
-  -webkit-transform: skew(-10deg, 2deg);
-  transform: skew(-10deg, 2deg);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
   background-size: cover !important;
 }
 
 #team .bg::after {
   content: '';
-  width: 110%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   position: absolute;
   background: inherit;
-  top: 0;
+  bottom: 0;
   transform-origin: right bottom;
-  transform: skewY(-9deg);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  transform: skewY(-3deg);
 }
 
 #team .bg::before {
   content: '';
   width: 100%;
-  height: 100%;
+  height: 50%;
   position: absolute;
   background: inherit;
-  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
   transform-origin: right top;
   transform: skewY(3deg);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-left: -300px;
-  margin-right: -300px;
 }
 
 #team a:link,
@@ -840,45 +817,25 @@ input.smallButton:hover {
 #footer {
   /*margin-top: 0;*/
   box-sizing: border-box;
-  overflow: hidden;
   position: relative !important;
-  padding-bottom: 70px;
-  bottom: 0 !important;
+  overflow: hidden;
+  padding: 400px 0 150px;
   margin-top: -200px;
   /*z-index: 0;*/
 }
 
 #footer .bg1 {
   background-color: #f4f9fd;
-  width: 85%;
-  position: relative;
-  left: -80px;
-  top: 250px;
-  padding: 100px 0px 250px 0px;
-  bottom: 0;
-  box-sizing: border-box;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  /*padding: 70vh 0px;*/
-  -ms-transform: skew(10deg, 9deg);
-  -webkit-transform: skew(10deg, 9deg);
-  transform: skew(10deg, 9deg);
-  z-index: -1;
-}
-
-#footer .bg1::after {
-  content: '';
-  width: 100%;
-  height: 100%;
+  width: 6000px;
   position: absolute;
-  background: inherit;
-  top: 100px;
-  bottom: 0;
-  transform-origin: left bottom;
-  transform: skewY(10deg);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  left: 50%;
+  margin-left: -3000px;
+  height: 1000px;
+  bottom: -200px;
+  box-sizing: border-box;
   z-index: -1;
+  transform-origin: left top;
+  transform: skewY(8deg);
 }
 
 #footer .bg2 {
@@ -890,16 +847,16 @@ input.smallButton:hover {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #8c57d1 20%, #1090cb 43%, #1046d1 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  width: 30%;
-  top: 270px;
-  float: right;
-  right: -120px;
+  width: 3000px;
+  bottom: -560px;
+  height: 800px;
+  left: 50%;
+  margin-left: 290px;
   position: absolute;
   box-sizing: border-box !important;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  padding: 200px 0px;
-  /*padding: 70vh 0px;*/
+
   -ms-transform: skew(10deg, 8deg);
   -webkit-transform: skew(10deg, 8deg);
   transform: skew(10deg, 8deg);
@@ -977,9 +934,7 @@ input.smallButton:hover {
 .goTop {
   width: 100px;
   height: 100px;
-  float: right;
   position: relative;
-  display: block;
 }
 
 .goTopCircle {
@@ -993,11 +948,9 @@ input.smallButton:hover {
 }
 
 .goTopText {
-  top: 120px;
-  left: 75px;
-  float: right;
   position: relative;
-  /*display: block;*/
+  top: 10px;
+  margin-left: 25px;
   color: white;
 }
 
@@ -1010,28 +963,16 @@ input.smallButton:hover {
 #footer .roundedRectangle { margin-top: -7px; margin-bottom: 0; margin-left: 0;}
 #footer .dotsPattern { top: 80%; left: 100%; }
 #footer .formHighlightWrapper { bottom: 0%; }
-#footer .lootsafe-triangle-outline { color: #ffffff; top: 60%; left: 50%; bottom: 0; right: 0;}
+#footer .lootsafe-triangle-outline { color: #ffffff; top: 90%; left: 10%; bottom: 0; right: 0;}
 #footer .blueCircle { top: -55%; left: 40%; }
 #footer .whiteCircleSmall { top: -30%; left: 110%; }
 /* End of Footer */
 
 /*  media queries */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html {
     overflow-x: hidden;
-  }
-
-  #hero .bg {
-    left: -150px;
-  }
-
-  #hero .contentWrapper {
-    display: block;
-  }
-
-  #hero .bg {
-    width: 120% !important;
   }
 
   /* what we do */
@@ -1220,35 +1161,7 @@ input.smallButton:hover {
 
 }
 
-@media (min-width: 2500px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -50px;
-  }
-  #tools .bg {
-    right: -770px !important;
-  }
-}
-
-@media (min-width: 2000px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -50px;
-  }
-  #tools .bg {
-    right: -500px;
-  }
-}
-
-
-@media (min-width: 1000px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -150px !important;
-  }
-}
-
-@media (max-width: 660px) {
+@media (max-width: 767px) {
   /* Start of hero */
   #hero .contentWrapper { display: block !important; margin: 0; padding: 20vh 0px;}
   #hero .wrapper { padding: 20vh 0px; display: block !important; }
@@ -1290,9 +1203,9 @@ input.smallButton:hover {
   /* End of Team */
 }
 
-@media (max-width: 578px) {
+@media (max-width: 767px) {
   #hero .bg {
-    width: 150% !important;
+    width: 150%;
     padding: 680px 0px;
     top: -400px;
     -ms-transform: skew(-10deg, 0deg);
@@ -1389,12 +1302,10 @@ input.smallButton:hover {
   /* reduce the navbar image size to accomodate the button next to it */
   .navbar-brand img {
     margin-top: -5px;
-    width: 150px;
+    width: 300px;
+    max-width: 100%;
   }
 
-  #mobileSpacer {
-    padding-top: 90px;
-  }
   .justify-content-end {
     /*display: none;*/
   }
@@ -1407,25 +1318,219 @@ input.smallButton:hover {
   text-align-last: left;
 }
 
-@media only screen and (max-width: 769px) {
-  /* make the go to top image dark because the background that made it visible in all other screen sizes dissapears*/
+/* Bootstrap LG */
+@media only screen and (max-width: 1199px) {
+  
+  #tools .bg {
+    left: 60%;
+  }
+  
+  #whatWeDo .smallGrayBgRight, #whatWeDo .smallGrayBgLeft {
+    height: 590px;
+  }
+
+  #tools {
+    padding-bottom: 100px;
+  }
+
+  #footer .bg2 {
+    margin-left: 210px;
+  }
+
+}
+
+
+/* Bootstrap SM */
+@media only screen and (max-width: 991px) {
+  
+  #tools .bg {
+    left: 50%;
+    width: 150vw;
+  }
+
+  #hero .bg {
+    left: -35%;
+    top: -460px;
+  }
+
+  #hero .heroRightContent {
+    margin-top: 60px;
+  }
+
+  #hero .hero-row {
+    padding-bottom: 150px;
+  }
+
+  #whatWeDo {
+    margin-bottom: 180px;
+  }
+
+  #whatWeDo .container .row {
+    margin-bottom: 80px;
+  }
+
+  #whatWeDo .smallGrayBgRight{
+    height: 440px;
+    margin-left: -200px;
+  }
+  
+  #whatWeDo .smallGrayBgLeft {
+    height: 440px;
+    margin-right: -200px;
+  }
+
+  #tools .bg {
+    top: -32px;
+    height: 920px;
+  }
+
+  #footer .bg2 {
+    margin-left: 160px;
+  }
   
 }
 
-/*ultrawide changes*/
-@media only screen and (min-width: 1440px) {
-  /* make the go to top image dark because the background that made it visible in all other screen sizes dissapears*/
-  #footer .bg2 {
-        right: -40px !important;
+
+/* Bootstrap XS */
+@media only screen and (max-width: 767px) {
+
+  #hero h1 {
+    font-size: 2rem;
   }
+
+  #hero .bg {
+    width: 200%;
+    left: -35%;
+    top: -820px;
+  }
+
+  #hero .hero-row {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  #hero .heroRightContent {
+    margin-top: 0px;
+  }
+
+  .mobileSpacer {
+    width: 100%;
+    height: 60px;
+    clear: both;
+  }
+
+  #whatWeDo {
+    margin-bottom: 60px;
+  }
+
+  #whatWeDo .container .row {
+    margin-bottom: 20px;
+  }
+
+  #tools {
+    margin-top: 100px;
+  }
+
+  #tools .bgContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  #tools .bg {
+    transform: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: -50px;
+    width: 100%;
+    height: 100%;    
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+
+    text-align: center;
+  }
+
+  #tools .leftContent {
+    text-align: center;
+  }
+
+  #team {
+    margin-bottom: 200px;
+  }
+
+  #team .bg {
+    transform: none;
+  }
+
+  #team .bg::after {
+    content: none;
+  }
+
+  #team .bg::before {
+    content: none;
+  }
+
+  #footer {
+    padding: 50px 0 30px;
+    margin-top: 0;
+
+    background: #8c57d1;
+    /* Old browsers */
+    background: -moz-linear-gradient(135deg, #8c57d1 40%, #1090cb 68%, #1046d1 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(135deg, #8c57d1 40%, #1090cb 68%, #1046d1 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #8c57d1 40%, #1090cb 68%, #1046d1 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    text-align: center;
+  }
+
+  #footer .bg1, #footer .bg2 {
+    display: none !important;
+  }
+
+  #footer .goTop, #footer .goTopText {
+    display: none;
+  }
+
+  #footer .footerBoxHeadline {
+    color: white;
+  }
+
+  .footerBoxLink a:link, .footerBoxLink a:hover, .footerBoxLink a:visited {
+    color: white !important;
+  }
+
+}
+
+
+/* Widescreen Styles */
+@media only screen and (min-width: 1440px) {
 
   .smallGrayBgRight, .smallGrayBgLeft {
     /*display: none !important;*/
     padding: 12vw 0px;
   }
 
+  #hero .bg {
+    top: -442px;
+  }
+
+  #hero .hero-row {
+    padding-bottom: 100px;
+  }
+
 }
 
-#whyToChooseUs {
-  margin-bottom: 200px;
+/* Ultrawide Styles */
+
+@media only screen and (min-width: 2560px) {
+  #hero .bg {
+    top: -410px;
+  }
 }
