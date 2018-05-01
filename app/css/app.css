@@ -259,7 +259,7 @@ p {
 .lootsafe-diamond {
   position: absolute;
   /*margin: 10vh 0 0 30vw !important;*/
-  top: 80vh;
+  top: 60vh;
   left: 38vw;
   color: #26e1fd;
 }
@@ -281,7 +281,7 @@ p {
 
 /* End of design elements from background */
 
-.contentWrapper { display: inline-flex !important; margin: 0; align-items: center; padding: 20vh 0px;}
+.contentWrapper { display: inline-flex !important; margin: 0; align-items: center; padding: 100px 0px;}
 .wrapper { padding: 20vh 0px; display: inline-flex !important; }
 
 .heroLeftContent,
@@ -373,6 +373,7 @@ p {
 
 .largeButton {
   position: relative;
+  display: inline-block;
   background-color: #26e1fd;
   border: 0px;
   border-radius: 50px;
@@ -383,7 +384,6 @@ p {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   box-shadow: 5px 0px 10px rgba(0, 0, 0, .1);
-  top: 30px;
   cursor: pointer;
   z-index: 999;
 }
@@ -420,7 +420,6 @@ input.smallButton:hover {
 #whatWeDo {
   max-width: 100% !important;
   position: relative;
-  overflow: hidden;
 }
 
 #whatWeDo .contentWrapper {
@@ -429,12 +428,13 @@ input.smallButton:hover {
 
 .smallGrayBgRight {
   right: 0;
-  width: 80%;
-  padding: 33vw 0px !important;
-  top: 2vh;
+  width: 6000px;
+  padding: 370px 0px !important;
+  top: -386px;
   display: inline-flex;
   align-items: center;
-  right: -45vw;
+  left: 50%;
+  margin-left: 360px;
   background-color: #f4f9fd;
   position: absolute !important;
   box-sizing: border-box !important;
@@ -447,13 +447,13 @@ input.smallButton:hover {
 }
 
 .smallGrayBgLeft {
-  left: 0;
-  width: 80%;
-  padding: 33vw 0px !important;
-  top: 95vh;
-  left: -45vw;
+  width: 6000px;
+  padding: 370px 0px !important;
+  top: 438px;
   display: inline-flex;
   align-items: center;
+  right: 50%;
+  margin-right: 180px;
   background-color: #f4f9fd;
   position: absolute !important;
   box-sizing: border-box !important;
@@ -480,7 +480,7 @@ input.smallButton:hover {
   background-color: #f4f9fd;
   /*box-shadow: 0px 0px 30px rgba(0, 0, 0, .02);*/
   box-sizing: border-box !important;
-  padding: 40px 20px;
+  padding: 40px 30px !important;
   border-left: 10px solid #fff;
 }
 .box:first-child { border-left: none; }
@@ -513,7 +513,8 @@ input.smallButton:hover {
   width: 100%;
   top: 350px;
   float: right;
-  right: -100px;
+  left: 50%;
+  margin-left: -600px;
   position: absolute;
   box-sizing: border-box;
   border-bottom-left-radius: 20px;
@@ -530,8 +531,7 @@ input.smallButton:hover {
 #tools .bg::after {
   content: '';
   width: 110%;
-  /*height: 100%;*/
-  top: 0;
+  top: -140px;
   height: 1500px;
   position: absolute;
   background: inherit;
@@ -575,7 +575,7 @@ input.smallButton:hover {
 #tools .outlineCircle {
   position: absolute;
   top: 610px;
-  left: 20.5vh;
+  right: 20.5vh;
 }
 
 #tools .leftContent {
@@ -662,60 +662,55 @@ input.smallButton:hover {
 /* Start of Team */
 
 #team {
-  padding: 200px 0px 0px 0px;
+  margin-top: 240px;
+  padding-top: 60px;
   box-sizing: border-box !important;
-  margin-bottom: 400px;
+  margin-bottom: 360px;
+  position: relative;
 }
 
 #team .bgContainer {
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 #team .bg {
   background: #f4f9fd;
   width: 100%;
-  left: -100px;
   top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
   position: absolute;
   box-sizing: border-box;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  padding: 780px 0px;
-  /*padding: 70vh 0px;*/
-  -ms-transform: skew(-10deg, 2deg);
-  -webkit-transform: skew(-10deg, 2deg);
-  transform: skew(-10deg, 2deg);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
   background-size: cover !important;
 }
 
 #team .bg::after {
   content: '';
-  width: 110%;
-  height: 100%;
+  width: 100%;
+  height: 50%;
   position: absolute;
   background: inherit;
-  top: 0;
+  bottom: 0;
   transform-origin: right bottom;
-  transform: skewY(-9deg);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  transform: skewY(-3deg);
 }
 
 #team .bg::before {
   content: '';
   width: 100%;
-  height: 100%;
+  height: 50%;
   position: absolute;
   background: inherit;
-  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
   transform-origin: right top;
   transform: skewY(3deg);
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  margin-left: -300px;
-  margin-right: -300px;
 }
 
 #team a:link,
@@ -840,45 +835,25 @@ input.smallButton:hover {
 #footer {
   /*margin-top: 0;*/
   box-sizing: border-box;
-  overflow: hidden;
   position: relative !important;
-  padding-bottom: 70px;
-  bottom: 0 !important;
+  overflow: hidden;
+  padding: 400px 0 150px;
   margin-top: -200px;
   /*z-index: 0;*/
 }
 
 #footer .bg1 {
   background-color: #f4f9fd;
-  width: 85%;
-  position: relative;
-  left: -80px;
-  top: 250px;
-  padding: 100px 0px 250px 0px;
-  bottom: 0;
-  box-sizing: border-box;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
-  /*padding: 70vh 0px;*/
-  -ms-transform: skew(10deg, 9deg);
-  -webkit-transform: skew(10deg, 9deg);
-  transform: skew(10deg, 9deg);
-  z-index: -1;
-}
-
-#footer .bg1::after {
-  content: '';
-  width: 100%;
-  height: 100%;
+  width: 6000px;
   position: absolute;
-  background: inherit;
-  top: 100px;
-  bottom: 0;
-  transform-origin: left bottom;
-  transform: skewY(10deg);
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  left: 50%;
+  margin-left: -3000px;
+  height: 1000px;
+  bottom: -200px;
+  box-sizing: border-box;
   z-index: -1;
+  transform-origin: left top;
+  transform: skewY(8deg);
 }
 
 #footer .bg2 {
@@ -890,16 +865,16 @@ input.smallButton:hover {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #8c57d1 20%, #1090cb 43%, #1046d1 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  width: 30%;
-  top: 270px;
-  float: right;
-  right: -120px;
+  width: 3000px;
+  bottom: -560px;
+  height: 800px;
+  left: 50%;
+  margin-left: 300px;
   position: absolute;
   box-sizing: border-box !important;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  padding: 200px 0px;
-  /*padding: 70vh 0px;*/
+
   -ms-transform: skew(10deg, 8deg);
   -webkit-transform: skew(10deg, 8deg);
   transform: skew(10deg, 8deg);
@@ -1220,34 +1195,6 @@ input.smallButton:hover {
 
 }
 
-@media (min-width: 2500px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -50px;
-  }
-  #tools .bg {
-    right: -770px !important;
-  }
-}
-
-@media (min-width: 2000px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -50px;
-  }
-  #tools .bg {
-    right: -500px;
-  }
-}
-
-
-@media (min-width: 1000px) {
-  #footer .bg2 {
-    width: 40%;
-    right: -150px !important;
-  }
-}
-
 @media (max-width: 660px) {
   /* Start of hero */
   #hero .contentWrapper { display: block !important; margin: 0; padding: 20vh 0px;}
@@ -1412,20 +1359,25 @@ input.smallButton:hover {
   
 }
 
-/*ultrawide changes*/
+
+/* Widescreen Styles */
 @media only screen and (min-width: 1440px) {
-  /* make the go to top image dark because the background that made it visible in all other screen sizes dissapears*/
-  #footer .bg2 {
-        right: -40px !important;
-  }
 
   .smallGrayBgRight, .smallGrayBgLeft {
     /*display: none !important;*/
     padding: 12vw 0px;
   }
 
+  #hero .bg {
+    top: -442px;
+  }
+
 }
 
-#whyToChooseUs {
-  margin-bottom: 200px;
+/* Ultrawide Styles */
+
+@media only screen and (min-width: 2560px) {
+  #hero .bg {
+    top: -400px;
+  }
 }
