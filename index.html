@@ -18,7 +18,7 @@
     <section id="navigation">
       <div class="container">
         <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler navbar-toggler-right hidden-md-down" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand" href="#">
@@ -50,8 +50,8 @@
     <section id="hero">
       <div class="bg"></div>
       <div class="bgElements">
-        <span class="whiteCircleMedium scaling"></span>
-        <span class="blueCircle bigCircle scaling"></span>
+        <span class="whiteCircleMedium scaling hidden-lg-down"></span>
+        <span class="blueCircle bigCircle scaling hidden-lg-down"></span>
         <span class="whiteCircleSmall scaling"></span>
         <span class="whiteCircleSmall bottomWhiteCircleSmall scaling"></span>
         <span class="lootsafe-icon lootsafe-triangle-filled scaling"></span>
@@ -63,9 +63,8 @@
         <img src="app/images/bg2.svg" alt="bg">
       </div> -->
       <div class="container">
-        <div class="row">
-          <div class="contentWrapper align-self-start">
-            <div class="col-md-6 heroLeftContent align-self-center">
+        <div class="row hero-row">
+            <div class="col-lg-6 col-md-12 heroLeftContent align-self-center">
               <h1 class="mainHeadline">Decentralize your game assets and <strong>Keep your loot safe!</strong></h1>
               <p class="subtitle">Effortlessly build your games in a fair way that puts ownership in the hands of your gamers.</p>
               <a href="#" class="getStarted">
@@ -74,7 +73,7 @@
               </a>
             </div>
 
-            <div class="col-md-5 offset-md-1 heroRightContent align-self-center">
+            <div class="col-lg-5 offset-lg-1 col-md-12 heroRightContent">
               <div class="formHighlightWrapper topRight">
                 <div class="formHighlightLeft animated fadeInRight"></div>
                 <div class="formHighlightRight animated fadeInLeft"></div>
@@ -110,44 +109,51 @@
                 <div class="formHighlightRight animated fadeInLeft"></div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <section id="whatWeDo">
-      <div class="bg smallGrayBgRight"></div>
-      <div class="bg smallGrayBgLeft"></div>
+    <section id="whatWeDo">      
       <div class="container">
         <div class="row" id="thestack">
-          <div class="contentWrapper align-self-start" style="padding-bottom: 0">
-            <div class="col-md-6 col-sm-12 offset-md-1 leftContent align-self-center">
-              <h2 class="headline">What is LootSafe?</h2>
-              <p class="leftCenterJustifiedText">LootSafe is Blockchain-based software company that enables game developers of all sizes to affordably create, decentralize, and manage game assets on the public Blockchain. LootSafe resolves previous problems like security, durability, and obsolescence of digital assets. </p>
-              <a href="#tools" class="largeButton" id="">Learn More</a>
-            </div>
-            <div id="mobileSpacer"></div>
-            <div class="col-md-6 col-sm-12 rightContent align-self-center">
+          <div class="bgContainer">
+            <div class="bg smallGrayBgRight hidden-sm-down"></div>
+          </div>
+            
+
+            <div class="col-md-6 col-sm-12 rightContent align-self-center order-md-2">
               <div class="firstWhatWeDoImage">
                 <img src="app/images/bossfight.png" alt="BossFight" class="img-fluid"/>
               </div>
             </div>
-          </div>
+
+            <div class="col-md-6 col-sm-12 leftContent align-self-center order-md-1">
+                <h2 class="headline">What is LootSafe?</h2>
+                <p class="leftCenterJustifiedText">LootSafe is Blockchain-based software company that enables game developers of all sizes to affordably create, decentralize, and manage game assets on the public Blockchain. LootSafe resolves previous problems like security, durability, and obsolescence of digital assets. </p>
+                <a href="#tools" class="largeButton" id="">Learn More</a>
+                <div class="mobileSpacer"></div>
+              </div>
         </div>
 
         <div class="row">
-          <div class="contentWrapper align-self-start" style="padding-bottom: 0">
-              <div class="col-md-7 col-sm-7 rightContent align-self-center" id="tools">
+          <div class="bgContainer">
+            <div class="bg smallGrayBgLeft hidden-sm-down"></div>
+          </div>
+
+            
+
+              <div class="col-md-6 col-sm-12 rightContent align-self-center order-md-1">
                 <div class="secondWhatWeDoImage">
                   <img src="app/images/itemaquired.png" alt="ItemAquired" class="img-fluid"/>
                 </div>
               </div>
 
-              <div class="col-md-5 sol-sm-5 align-self-center">
-                <h2 class="headline">Marketplace</h2>
-                <p class="leftCenterJustifiedText">Browse a selection of secure, audited, smart contracts with extensable API's that drop right into the LootSafe stack. The marketplace also allows developers of any size to publish and sell their own extensions and contracts.</p>
-              </div>
-          </div>
+              <div class="col-md-6 sol-sm-12 align-self-center order-md-2">                  
+                  <h2 class="headline">Marketplace</h2>
+                  <p class="leftCenterJustifiedText">Browse a selection of secure, audited, smart contracts with extensable API's that drop right into the LootSafe stack. The marketplace also allows developers of any size to publish and sell their own extensions and contracts.</p>
+                </div>
+
+              
       </div>
     </section>
 
@@ -203,14 +209,14 @@
       </div>
 
       <div class="container" id="contracts">
-        <div class="row align-self-start toolsRow">
-          <div class="col-md-5 offset-md-1 leftContent align-self-center">
+        <div class="row toolsRow">
+          <div class="col-lg-5 offset-lg-1 col-md-12 offset-sm-0 leftContent align-self-center">
             <h2 class="headline">Our Contracts</h2>
             <p>Your game is unique, LootSafe offers many different contracts to choose from during creation to fit your needs. From Crafting, Trading, LootBoxes and more!</p>
             <a href="#team" class="largeButton">Learn More</a>
           </div>
 
-          <div class="col-md-6 toolBoxWrapper align-self-center">
+          <div class="col-lg-6 col-md-12 toolBoxWrapper align-self-center">
             <div class="row">
               <div class="col-md-6 up">
                 <div class="toolBox">
@@ -306,7 +312,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/matt.png" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -321,7 +327,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/mike.png" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -336,7 +342,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/dave.png" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -351,7 +357,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/michael.jpg" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -366,7 +372,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/jeff.jpg" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -376,7 +382,7 @@
               <p class="teamPersonParagraph">LootSafe, LLC</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/hogan.png" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -386,7 +392,7 @@
               <p class="teamPersonParagraph">LootSafe, LLC</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/otherMatt.jpg" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -396,7 +402,7 @@
               <p class="teamPersonParagraph">LootSafe, LLC</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/alex.jpg" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -406,7 +412,7 @@
               <p class="teamPersonParagraph">LootSafe, LLC</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/andy.png" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -416,7 +422,7 @@
               <p class="teamPersonParagraph">LootSafe, LLC</p>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/adam.png" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -433,7 +439,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/caleb.jpg" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -448,7 +454,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/TM_2018.png" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -463,7 +469,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-6">
             <div class="teamPersonWrapper">
               <a href="#">
                 <img src="app/images/people_reduced/auryn.jpg" class="teamPersonPicture img-fluid" alt="Person1" />
@@ -546,7 +552,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-3 footerBoxWrapper">
+          <div class="col-md-3 col-6 footerBoxWrapper">
             <h6 class="footerBoxHeadline">ABOUT</h6>
             <ul class="footerBoxLinks">
               <li class="footerBoxLink"><a href="app/LootSafe_Abstract.pdf">Abstract</a></li>
@@ -554,7 +560,7 @@
             </ul>
           </div>
 
-          <div class="col-md-4 footerBoxWrapper">
+          <div class="col-md-3 col-6 footerBoxWrapper">
             <h6 class="footerBoxHeadline">CONTACT</h6>
             <ul class="footerBoxLinks">
               <li class="footerBoxLink"><a href="mailto:matt@lootsafe.io">Contact Us</a></li>
@@ -563,9 +569,9 @@
               <li class="footerBoxLink"><a href="#">Terms of Service</a></li>
             </ul>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-md-3 col-6"></div>
 
-           <!-- <div class="col-md-3 footerBoxWrapper" id="">
+           <!-- <div class="col-md-3 col-6 footerBoxWrapper" id="">
             <h6 class="footerBoxHeadline">JOIN US</h6>
             <p>Join our newsletter</p>
             <form class="footerBoxSignUp" action="index.html" method="post">
@@ -574,7 +580,7 @@
             </form>
           </div> -->
 
-          <a href="#" class="col-md-2 pull-right" id="goTopContainer" style="top: 50px; left: 20px; cursor: pointer;">
+          <div class="col-md-3 col-6 pull-right" id="goTopContainer">
             <div class="roundedRectanglesUnderForm">
               <div class="roundedRectangle" style="margin-left: 10px;"></div>
               <div class="roundedRectangle" style="margin-left: 30px;"></div>
@@ -585,16 +591,17 @@
               <div class="formHighlightLeft"></div>
               <div class="formHighlightRight"></div>
             </div>
-            <span class="lootsafe-icon lootsafe-triangle-outline"></span>
-            <span class="bigCircle blueCircle"></span>
+            <span class="lootsafe-icon lootsafe-triangle-outline hidden-sm-down"></span>
+            <span class="bigCircle blueCircle hidden-sm-down"></span>
             <span class="smallCircle whiteCircleSmall"></span>
-            <div class="goTop align-items-center" style="margin-right: -5rem;">
-              <div class="goTopCircle"></div>
-              <span class="lootsafe-icon lootsafe-triangle-filled"></span>
-              <span class="bigCircle outlineCircle"></span>
-            </div>
-            <small class="goTopText">GO TOP</small>
-          </a>
+            <a href="#">
+              <div class="goTop align-items-center">
+                <div class="goTopCircle"></div>
+                <span class="lootsafe-icon lootsafe-triangle-filled"></span>
+              </div>
+              <small class="goTopText">GO TOP</small>
+            </a>
+          </div>
 
         </div>
       </div>
