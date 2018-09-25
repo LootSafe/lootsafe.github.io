@@ -439,7 +439,7 @@ input.smallButton:hover {
 #whatWeDo .smallGrayBgRight {
   top: 0;
   width: 6000px;
-  height: 710px;
+  height: 450px !important;
   top: -480px;
   display: inline-flex;
   align-items: center;
