@@ -18,6 +18,23 @@ h2 { font-size: 40px; font-weight: 300 !important; line-height: 50px !important;
 h4 { font-size: 20px !important; font-weight: 500 !important; line-height: 30px !important; }
 .important { font-weight: 600 !important; }
 
+.disabledbutton {
+  background: #ccc !important;
+  cusor: default !important;
+}
+
+.disabledbutton:hover {
+  color: #fff;
+}
+
+.learnmore {
+    position: absolute !important;
+    margin-top: 1rem;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+}
+
 ul li,
 ul,
 li {
@@ -1320,11 +1337,11 @@ input.smallButton:hover {
 
 /* Bootstrap LG */
 @media only screen and (max-width: 1199px) {
-  
+
   #tools .bg {
     left: 60%;
   }
-  
+
   #whatWeDo .smallGrayBgRight, #whatWeDo .smallGrayBgLeft {
     height: 590px;
   }
@@ -1342,7 +1359,7 @@ input.smallButton:hover {
 
 /* Bootstrap SM */
 @media only screen and (max-width: 991px) {
-  
+
   #tools .bg {
     left: 50%;
     width: 150vw;
@@ -1373,7 +1390,7 @@ input.smallButton:hover {
     height: 440px;
     margin-left: -200px;
   }
-  
+
   #whatWeDo .smallGrayBgLeft {
     height: 440px;
     margin-right: -200px;
@@ -1387,7 +1404,7 @@ input.smallButton:hover {
   #footer .bg2 {
     margin-left: 160px;
   }
-  
+
 }
 
 
@@ -1446,7 +1463,7 @@ input.smallButton:hover {
     bottom: 0;
     top: -50px;
     width: 100%;
-    height: 100%;    
+    height: 100%;
     padding: 0;
     margin: 0;
     border-radius: 0;
