@@ -25,7 +25,21 @@
 
   gtag('config', 'UA-122218513-1');
 </script>
+<!-- MailerLite Universal -->
+<script>
+(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
 
+var ml_account = ml('accounts', '1281670', 'q2p7j1g5h0', 'load');
+</script>
+<!-- End MailerLite Universal -->
+<script>
+    var ml_webform_1064410 = ml_account('webforms', '1064410', 'b2y7v3', 'load');
+    ml_webform_1064410('animation', 'fadeIn');
+</script>
   </head>
   <body>
     <section id="navigation">
@@ -101,7 +115,8 @@
               <div class="signUpForm" action="index.html" method="post">
                 <h3 style="color: #333;">Join our Newsletter</h3>
                 <br />
-                <p style="color: #444;">Be the first to access our token generation event and stay in the know with LootSafe.</p><button type="button" class="button prefinery-form-cta largeButton">Join Now</button>
+                <p style="color: #444;">Be the first to access our token generation event and stay in the know with LootSafe.</p>
+		      <a href="javascript:;" onclick="ml_webform_1064410('show')"><button type="button" class="button prefinery-form-cta largeButton">Join Now</button></a>
               </div>
               <div class="formHighlightWrapper bottomLeft">
                 <div class="formHighlightLeft animated fadeInRight"></div>
