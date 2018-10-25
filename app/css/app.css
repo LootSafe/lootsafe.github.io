@@ -1551,3 +1551,22 @@ input.smallButton:hover {
     top: -410px;
   }
 }
+
+
+.navbar-social {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+  display: inline;
+  z-index: 5000;
+  list-style-type: none;
+}
+
+.navbar-social li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.navbar-social li a img {
+  width: 30px;
+}
